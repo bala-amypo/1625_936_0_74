@@ -1,8 +1,9 @@
 package com.example.demo.entity;
-
+import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 @Entity
 public Class StudentEntity{
 @Id
@@ -41,7 +42,13 @@ public void setName(String name){
 public void setEmail(String email){
     this.email=email;
 }
-public void setPassword()
-
-
+public void setPassword(String password){
+    this.password = password;
+}
+public void setCreated(Date created){
+    this.created = created;
+}
+public void setId(Integer id){
+    this.id = id;
+}
 }
