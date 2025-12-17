@@ -1,8 +1,9 @@
 package com.example.demo.controller;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.we.factory.annotation.PostMapping;
-import com.example.demo.service.StudentService;
+import org.springframework.web.bind.annotation.PostMapping;
+import com.example.demo.service.Studentservice;
+import com.example.demo.entity.StudentEntity;
 @RestController
 public class Studentcontroller{
 @Autowired Studentservice service;
