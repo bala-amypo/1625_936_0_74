@@ -21,13 +21,13 @@ public String getName(){
     return name;
 }
 public String getEmail(){
-    return name;
+    return email;
 }
-public String getPassword(String name){
-    return name;
+public String getPassword(){
+    return password;
 }
-public Date getCreated(Date created){
-
+public Date getCreated(){
+return 
 }
 
 }
