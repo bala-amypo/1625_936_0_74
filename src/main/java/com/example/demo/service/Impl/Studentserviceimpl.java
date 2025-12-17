@@ -13,6 +13,7 @@ public class Studentserviceimpl implements Studentservice{
     //findAllById()
     //save()
     //existsById()
+    @Override
 public StudentEntity postdata(StudentEntity stu){
     return student.save(stu);
 }
