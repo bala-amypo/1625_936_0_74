@@ -17,8 +17,17 @@ public StudentEntity(String name,Integer id,String email,String password,Date cr
     this.password=password;
     this.created = created;
 }
-public String getName(String name){
-    
+public String getName(){
+    return name;
+}
+public String getEmail(){
+    return name;
+}
+public String getPassword(String name){
+    return name;
+}
+public Date getCreated(Date created){
+
 }
 
 }
