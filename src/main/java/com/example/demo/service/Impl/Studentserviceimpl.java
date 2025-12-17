@@ -3,10 +3,10 @@ import com.example.demo.service.StudentService;
 import org.springframework.stereotype.Service;
 import com.example.demo.repository.Studentrepository;
 import com.example.demo.entity.StudentEntity;
-import org.springframework.beans.factory.annotation.AutoWired;
+import org.springframework.beans.factory.annotation.Autowired;
 @Service
 public class Studentserviceimpl implements Studentservice{
-@AutoWired Studentrepository student;
+@Autowired Studentrepository student;
 //findAll()
 //findById()
     //deleteById()
