@@ -17,7 +17,7 @@ private Long id;
 @NotNull
 @Size(min=2,max=7, message="Must Be 2 to 7 Characters")
 private String userName;
-@Email
+@Email(message="Email is not Valid")
 private String email;
 @NotNull(message="Password is mandatory")
 @Size(min=2,max=10,message="Password must be 2 to 10 characters")
@@ -27,8 +27,11 @@ private String password;
 private int Age;
 public ValidationEntity(){}
 public ValidationEntity(Long id,
-@NotNullString userName,
-
+@NotNull @Size(min=2,max=7, message="Must Be 2 to 7 Characters") String userName,
+@Email(message="Email is not Valid") String email,
+@NotNull(message="Password is mandatory") @Size(min=2,max=10,message="Password must be 2 to 10 characters")String password,
+@Positive(message="Age must be positive")
+@Max(30)int Age
 ){
 
 }
