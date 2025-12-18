@@ -18,5 +18,9 @@ public StudentEntity postval(@RequestBody StudentEntity entity){
 public List<StudentEntity> getval(){
     return service.getAllData();
 }
+@DeleteMapping("/delete/{id}")
+public String deleteval(@PathVariable){
+    return service.
+}
 
 }
