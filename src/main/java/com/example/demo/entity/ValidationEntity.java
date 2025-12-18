@@ -24,16 +24,19 @@ private String email;
 private String password;
 @Positive(message="Age must be positive")
 @Max(30)
-private int Age;
+private int age;
 public ValidationEntity(){}
 public ValidationEntity(Long id,
 @NotNull @Size(min=2,max=7, message="Must Be 2 to 7 Characters") String userName,
 @Email(message="Email is not Valid") String email,
 @NotNull(message="Password is mandatory") @Size(min=2,max=10,message="Password must be 2 to 10 characters")String password,
-@Positive(message="Age must be positive")
-@Max(30)int Age
+@Positive(message="Age must be positive") @Max(30)int age
 ){
-
+this.id = id;
+this.userName = userName;
+this.email = email;
+this.password=password;
+this.age = age;
 }
 public String getUserName(){
     return name;
