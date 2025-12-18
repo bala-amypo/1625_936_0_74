@@ -25,6 +25,8 @@ public String deleteval(@PathVariable int id){
     return service.DeleteData(id);
 }
 @GetMapping("/getid/{id}")
-
+public StudentEntity getdataid(@PathVariable int id){
+    return service.getData(id);
+}
 
 }
