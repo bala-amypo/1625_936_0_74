@@ -12,7 +12,7 @@ import jakarta.validation.constraints.Positive;
 @Entity
 public class ValidationEntity{
     @Id
-    @GeneratedValue=(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
 private Long id;
 @NotNull
 @Size(min=2,max=7, message="Must Be 2 to 7 Characters")
