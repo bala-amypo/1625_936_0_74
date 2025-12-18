@@ -7,6 +7,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Positive;
 //  springbootstartervalidation
 @Entity
 public class ValidationEntity{
@@ -19,7 +20,10 @@ private String userName;
 @Email
 private String email;
 @Max(6)
+@NotNull(message="Password is mandatory")
 private String password;
+@Positive(message="Age must be positive")
+@Max(30)
 private int Age;
 
 public ValidationEntity(){}
