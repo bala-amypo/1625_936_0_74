@@ -24,5 +24,7 @@ public List<StudentEntity> getval(){
 public String deleteval(@PathVariable int id){
     return service.DeleteData(id);
 }
+@GetMapping("/getid/{id}")
+
 
 }
