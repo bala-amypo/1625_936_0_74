@@ -28,5 +28,9 @@ public String deleteval(@PathVariable int id){
 public StudentEntity getdataid(@PathVariable int id){
     return service.getData(id);
 }
+@PutMapping("/put/{id}")
+public StudentEntity putval(@PathVariable int id,@RequestBody StudentEntity entity){
+    return service.updateData(id,entity);
+}
 
 }
