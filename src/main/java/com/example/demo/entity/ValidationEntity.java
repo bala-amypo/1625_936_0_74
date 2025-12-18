@@ -19,13 +19,12 @@ private Long id;
 private String userName;
 @Email
 private String email;
-@Max(6)
+@Size(min=2,max=10,message="Password must be 2 to 10 characters")
 @NotNull(message="Password is mandatory")
 private String password;
 @Positive(message="Age must be positive")
 @Max(30)
 private int Age;
-
 public ValidationEntity(){}
- 
+
 }
