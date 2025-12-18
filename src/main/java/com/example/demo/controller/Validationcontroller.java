@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import java.util.List;
+import jakarta.validation.valid;
 @RestController
 public class Validationcontroller{
 @Autowired Validationservice service;
-@PostMapping("/post")
+@PostMapping("/validpost")
 public ValidationEntity postval(@Valid @RequestBody ValidationEntity entity){
     return service.postdata(entity);
 }
