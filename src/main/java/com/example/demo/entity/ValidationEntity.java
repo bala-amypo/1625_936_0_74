@@ -26,6 +26,12 @@ private String password;
 @Max(30)
 private int Age;
 public ValidationEntity(){}
+public ValidationEntity(Long id,
+@NotNullString userName,
+
+){
+
+}
 public String getUserName(){
     return name;
 }
