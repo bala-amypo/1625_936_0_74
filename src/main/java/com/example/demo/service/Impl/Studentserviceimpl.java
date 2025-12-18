@@ -10,12 +10,12 @@ public class Studentserviceimpl implements Studentservice{
 //findAll()
 //findById()
     //deleteById()
-    //findAllById()
-    //save()
-    //existsById()
-    @Override
-public StudentEntity postdata(StudentEntity stu){
-    return student.save(stu);
-}
+        //findAllById()
+            //save()
+                //existsById()
+                    @Override
+                    public StudentEntity postdata(StudentEntity stu){
+                        return student.save(stu);
+                        }
 
-}  
+                        }  
