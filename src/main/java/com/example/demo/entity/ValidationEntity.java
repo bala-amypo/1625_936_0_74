@@ -39,7 +39,7 @@ this.password=password;
 this.age = age;
 }
 public String getUserName(){
-    return name;
+    return userName;
 }
 public String getEmail(){
     return email;
