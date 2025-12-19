@@ -22,8 +22,8 @@ private String name;
 private String email;
 private LocalDateTime createdat;
 private LocalDateTime updatedat;
-LocalDateTime now = LocalDateTime.now();
 @PrePersist
+LocalDateTime now = LocalDateTime.now();
 public void Oncreate(){
 this.createdat = now;
 this.updatedat = now;
@@ -31,4 +31,5 @@ this.updatedat = now;
 @PreUpdate
 public void Onupdate(){
 this.updatedat = now;
+}
 }
