@@ -18,6 +18,7 @@ public class stuidcard{
 private Integer id;
 private int cardnumber;
 
+@OneToOne
 private studetails student;
 
 }
