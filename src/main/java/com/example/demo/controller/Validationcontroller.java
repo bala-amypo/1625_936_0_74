@@ -19,7 +19,7 @@ public ValidationEntity postval(@Valid @RequestBody ValidationEntity entity){
     return service.postdata(entity);
 }
 @GetMapping("/validid/{id}")
-public ValidationEntity getdataid(@PathVariable int id){
+public ValidationEntity getdataid(@PathVariable Long id){
     return service.getData(id);
 }
 
