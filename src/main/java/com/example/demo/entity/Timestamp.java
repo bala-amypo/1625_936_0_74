@@ -12,7 +12,7 @@ import java.time.LocalDate;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentEntity{
+public class Timestamp{
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
 private Long id;
