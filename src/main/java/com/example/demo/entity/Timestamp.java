@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
+import jakarta.persistence.PrePersist;
 @Entity
 @Data
 @AllArgsConstructor
@@ -22,7 +23,7 @@ private LocalDateTime createdat;
 private LocalDateTime updatedat;
 @PrePersist
 public void Oncreate(){
-    
+
 }
 
 }
