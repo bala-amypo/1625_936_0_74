@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 public class Timestampcontroller{
 @Autowired Timestampservice service;
 @PostMapping("/timepost")
-public Timestamp posttimed(@Valid @RequestBody Timestamp entity){
+public Timestamp posttimed(@RequestBody Timestamp entity){
     return service.posttime(entity);
 }
 
