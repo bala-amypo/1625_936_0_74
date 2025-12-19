@@ -19,6 +19,6 @@ private Long id;
 private String name;
 private String email;
 private LocalDate createdat;
-private LocalData updatedat;
+private LocalDate updatedat;
 
 }
