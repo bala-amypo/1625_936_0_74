@@ -22,13 +22,13 @@ private String name;
 private String email;
 private LocalDateTime createdat;
 private LocalDateTime updatedat;
+LocalDateTime now = LocalDateTime.now();
 @PrePersist
 public void Oncreate(){
-LocalDateTime now = LocalDateTime().now();
 this.createdat = now;
 this.updatedat = now;
 }
 @PreUpdate
 public void Onupdate(){
-this.updatedat = now
+this.updatedat = now;
 }
