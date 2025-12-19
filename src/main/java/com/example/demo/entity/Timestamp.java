@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 @Entity
 @Data
 @AllArgsConstructor
@@ -18,7 +18,7 @@ public class Timestamp{
 private Long id;
 private String name;
 private String email;
-private LocalDate createdat;
-private LocalDate updatedat;
+private LocalDateTime createdat;
+private LocalDateTime updatedat;
 
 }
