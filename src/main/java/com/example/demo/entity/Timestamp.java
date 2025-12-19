@@ -23,7 +23,9 @@ private LocalDateTime createdat;
 private LocalDateTime updatedat;
 @PrePersist
 public void Oncreate(){
-
+LocalDateTime now = LocalDateTime().now();
+this.createdat = now;
+this.updatedat = now;
 }
 
 }
