@@ -12,16 +12,13 @@ import org.springframework.web.bind.annotation.PutMapping;
 import java.util.List;
 import jakarta.validation.Valid;
 @RestController
-public class Validationcontroller{
-@Autowired Validationservice service;
-@PostMapping("/validpost")
-public ValidationEntity postval(@Valid @RequestBody ValidationEntity entity){
+public class controller{
+@Autowired Timestampservice service;
+@PostMapping("/timepost")
+public ValidationEntity postval(@Valid @RequestBody Timestamp entity){
     return service.postdata(entity);
 }
-@GetMapping("/validid/{id}")
-public ValidationEntity getdataid(@PathVariable Long id){
-    return service.getData(id);
-}
+
 
 
 }
