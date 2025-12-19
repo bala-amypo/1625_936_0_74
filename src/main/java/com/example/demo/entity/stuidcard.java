@@ -12,11 +12,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentEntity{
+public class stuidcard{
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
 private Integer id;
-private String CollegeName;
-private String Department;
+private int cardnumber;
+
 
 }
