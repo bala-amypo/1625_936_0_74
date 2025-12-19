@@ -18,5 +18,6 @@ public class stuidcard{
 private Integer id;
 private int cardnumber;
 
+private studetails student;
 
 }
