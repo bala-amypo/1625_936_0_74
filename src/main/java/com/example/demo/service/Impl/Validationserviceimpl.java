@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.repository.Validationrepository;
 import com.example.demo.entity.ValidationEntity;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.example.demo.ValidationException;
+import com.example.demo.exception.ValidationException;
 
 import java.util.List;
 @Service
