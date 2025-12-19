@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-
+import java.time.LocalDate;
 @Entity
 @Data
 @AllArgsConstructor
@@ -15,10 +15,10 @@ import lombok.NoArgsConstructor;
 public class StudentEntity{
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
-private Integer id;
+private Long id;
 private String name;
 private String email;
-private String password;
-private Date created;
+private LocalDate createdat;
+private LocalData updatedat;
 
 }
